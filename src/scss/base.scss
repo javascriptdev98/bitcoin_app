@@ -1,0 +1,19 @@
+@import "./variables/variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "S FPro Display", sans-serif; 
+    background-color: $bg-color;
+}
+.app-container{
+  margin:6% 8%;
+}
+
+
+
+
+
+

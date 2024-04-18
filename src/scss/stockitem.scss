@@ -1,0 +1,133 @@
+@import "./variables/variables.scss";
+.stock-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: $fore-color;
+  border-radius: 15px;
+  
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px ;
+    font-size: 18px;
+
+    .info1,
+    .info2,
+    .info3 {
+      display: flex;
+    
+    }
+
+    .info1 {
+        display: flex;
+        align-items: center;
+      
+        .info1-icon {
+          margin-right: 5px; 
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        background-color: #FFA92B;
+        color:$fore-color;
+        padding: 8px;
+        position: relative;
+        right: 60px;
+        }
+        .text{
+          color:  #aeb8c4;
+          font-size: 16px;
+          position: relative;
+          left: 50px;
+        }
+        .name{
+          position: relative;
+          right: 50px;
+        }
+      }
+      
+      .info2{
+        font-size: 24px;
+        color: #4c5968;
+        position: relative;
+        top:15px;
+        right: 40px;
+      }
+      .info3{
+        position: relative;
+        top:25px;
+        right:40px;
+      }
+      .info3 p{
+        color: #aeb8c4;
+      }
+      .info3 button{
+        position: relative;
+        left:80px;
+        color:$fore-color;
+        border: 1px solid #ee225d;
+        background-color: #ee225d;
+        border-radius: 20px;
+        padding:2px 8px;
+
+      }
+
+  
+
+ 
+  }
+
+  .arrow {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #aeb8c4;
+    transition: transform 0.3s ease;
+    position: relative;
+    top: 10px;
+
+    &.expanded {
+      transform: rotate(180deg);
+    }
+  }
+
+  .extra-info {
+    display: inline;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+
+  }
+  .extra-info .buy-button{
+    color:$fore-color;
+    border: 1px solid #1A9AF6;
+    background-color: #1A9AF6;
+    border-radius: 20px;
+    padding:8px 20px; 
+    position: relative;
+    right: 20px;
+
+  }
+  .extra-info .sell-button{
+    color:$fore-color;
+    border: 1px solid #FD458F;
+    background-color: #FD458F;
+    border-radius: 20px;
+    padding:8px 20px; 
+    position: relative;
+    left: 10px;
+  }
+
+
+  &.showExtraInfo {
+    .extra-info {
+      display: block; // Show when the extra info is toggled
+    }
+  }
+}

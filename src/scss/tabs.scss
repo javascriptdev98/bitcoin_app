@@ -1,0 +1,26 @@
+.tab {
+    display: flex;
+    margin-bottom: 6%;
+    
+  }
+  
+  .tab button {
+    position: relative;
+    
+    background-color: transparent;
+    border-radius: 20px;
+    border:1px solid transparent;
+    padding:5px 15px;
+    cursor: pointer;
+    margin-left: 12px;
+  }
+  
+  .tab button.active {
+    background-color: #AEB8C4;
+    color: #333;
+  }
+  
+  .tab-content p {
+    margin: 10px 0;
+  }
+  
